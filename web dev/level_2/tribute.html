@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tribute to Sushant Singh Rajput</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #92ce62;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: 20px 0;
+            display: flex;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .slide {
+            flex: 0 0 100%;
+            display: none;
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 20px;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tribute to Sushant Singh Rajput</h1>
+    </header>
+    <div class="container">
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="https://images.firstpost.com/wp-content/uploads/2020/06/Sushant-Singh-Rajput-feature1.jpg"
+                    alt="Sushant Singh Rajput">
+            </div>
+            <div class="slide">
+                <img src="https://static.toiimg.com/thumb/msid-100983035,width-1280,resizemode-4/100983035.jpg"
+                    alt="Sushant Singh Rajput">
+            </div>
+            <div class="slide">
+                <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202306/desktop-wallpaper-sushant-singh-rajput-cool-and-new-sushant-singh-rajput-ms-dhoni-sixteen_nine.jpg?VersionId=eS73nZt14NRODdFVmleJcGWqewzyELVR"
+                    alt="Sushant Singh Rajput">
+            </div>
+            <div class="slide">
+                <img src="https://images.mid-day.com/images/images/2023/jun/sushant-death-2023_d.jpg"
+                    alt="Sushant Singh Rajput">
+            </div>
+            <div class="slide">
+                <img src="https://m.media-amazon.com/images/M/MV5BOGU2ODNkYmItYTBjZi00ZmIzLWFlNjMtZjA3ODUwYzdkYzg0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX500_CR0,29,500,281_.jpg"
+                    alt="Sushant Singh Rajput">
+            </div>
+            <div class="slide">
+                <img src="https://lagatar24.com/wp-content/uploads/2023/01/sushant-singh-rajput-11674216562771.jpg"
+                    alt="Sushant Singh Rajput">
+            </div>
+
+        </div>
+        <h2>Remembering Sushant Singh Rajput</h2>
+        <p>
+            Sushant Singh Rajput was a remarkable actor, a talented dancer, and a genuine soul who left an indelible
+            mark on the Indian film industry. Born on January 21, 1986, in Patna, Bihar, Sushant's journey from a
+            small-town boy to a Bollywood superstar is nothing short of inspiring.
+        </p>
+        <p>
+            With his infectious smile and boundless energy, Sushant had the ability to light up the screen with his
+            presence. His dedication to his craft was evident in every role he portrayed, from the lovable Manav in
+            "Pavitra Rishta" to the ambitious "MS Dhoni" in the biopic "M.S. Dhoni: The Untold Story," and many other
+            memorable characters in between.
+        </p>
+        <p>
+            Beyond his acting prowess, Sushant's intellectual curiosity and passion for learning set him apart. He was
+            an avid reader and a deep thinker, engaging in conversations that ranged from science to philosophy. His
+            thirst for knowledge and desire to explore the mysteries of the universe were truly admirable.
+        </p>
+        <p>
+            Sushant's philanthropic endeavors showcased his compassionate nature. He actively supported various causes,
+            including education for underprivileged children and environmental conservation. His kind heart and
+            generosity touched the lives of many, making a positive impact on society.
+        </p>
+        <div class="quote">
+            <p>"I want to be remembered as someone who was sincere." - Sushant Singh Rajput</p>
+        </div>
+        <p>
+            Sushant's untimely departure in 2020 left a void in the hearts of his fans and colleagues. However, his
+            legacy lives on through his work and the values he stood for. He taught us to dream big, work hard, and
+            never lose sight of our passions.
+        </p>
+        <p>
+            As we pay tribute to this talented soul, let us remember Sushant Singh Rajput for his infectious spirit,
+            unwavering determination, and the inspiration he continues to provide to countless individuals across the
+            world.
+        </p>
+    </div>
+    <footer>
+        <p>Rest in Peace, Sushant Singh Rajput (1986-2020)</p>
+    </footer>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[n].style.display = 'block';
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        showSlide(currentSlide);
+        setInterval(nextSlide, 5000); // Change image every 5 seconds
+    </script>
+</body>
+
+</html>
